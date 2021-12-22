@@ -1,0 +1,32 @@
+h1{
+  text-align: center;
+  background-color: blue;
+  color: white;
+  
+}
+
+h2{
+  font-weight: bold;
+  color: blueviolet;
+}
+
+body{
+  font-family: sans-serif;
+  margin:auto;
+  width: 900px;
+    height: 100px;
+  padding: 20px;
+  text-align: center;
+  background-color: #C0E1F7;
+}
+button{
+  background-color: yellow;
+  font-weight: bold;
+}
+
+div{
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}

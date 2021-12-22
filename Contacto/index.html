@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORMULARIO DE CONTACTO</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="icon" type="image/png" href="img/descarga.png">
+	
+
+</head>
+<body>
+	<div>
+		<h1>FORMULARIO DE CONTACTO</h1>
+		<form id="vic">
+			<p>
+				<label>Nombre completo:</label><br><br>
+				<input type="name" name="nombre" placeholder="Nombre">
+				<input type="name" name="nombre" placeholder="Apellido">
+			</p>
+			<p>
+				<label>Email:</label><br><br>
+				<input type="gmail" name="Email">
+			</p>
+			<p>
+				<label>Telefono:</label><br><br>
+				<input type="number" name="telefono">
+			</p>
+			<p>
+				<label>Asunto del mensaje:</label><br><br>
+				<input type="name" name="asunto">
+			</p>
+			<p>
+				<label>Mensaje:</label><br><br>
+				<textarea  name="" id="" required cols="80" rows="5">
+		       	</textarea>
+			</p>
+			<button id="boton">Enviar</button>
+		</form>
+	</div>
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript">
+		
+	$(document).ready(function(){
+
+		$("#boton").click(function(){
+			alert("Gracias por rrellenar el contacto recibira su respuesta por el Email.");
+		});
+	});
+</script>
+</body>
+</html>

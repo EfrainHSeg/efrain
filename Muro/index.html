@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<!---JOSE FERNANDO DAVILA BRAVO ----->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+ 
+<body>
+    <header></header>
+    <nav class="navbar navbar-light navbar-expand-md">
+
+        <h1>MURO ESCOLAR</h1>
+    </nav>
+      
+    <div class="col-md-8">
+
+        <form>
+            <div class="form-group">
+			<label>Correo institucional</label>
+			<input class="form-control" type="text"  id="name"
+			placeholder="josefernandodavila@tecsup.edu.pe">
+			</div>
+            <div class="form-group">
+			<label>Comentario</label>
+			<textarea id="comment" class="form-control" placeholder="Redacte comentarios acerca del curso, los profesore o la institucion.(Estan prohibidos los insultos o cualquier mensaje de ese indole)"></textarea></label>
+			</div>
+			<button type="button" class="btn btn-primary" onclick="commentBox();">Enviar</button>
+        </form>
+      
+    </div>
+    <div class="container">
+    <div class="col-md-6 pane">
+    <div class="col-md-4">
+			<div class="alert alert-light"><h4>comentarios</h4></div>
+			</div>
+			<div id="result">
+		</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    </div>
+	<script src="assets/js/script.js"></script>
+	<script >
+		function commentBox(){
+	var name=document.getElementById('name').value;
+	var comment=document.getElementById('comment').value;
+ 
+	if(name =="" || comment ==""){
+		alert("Porfavor introduce la informacion requerida!");
+	}else{
+		var parent=document.createElement('div');
+		var el_name=document.createElement('h5');
+		var el_message=document.createElement('p');
+		var el_line=document.createElement('hr');
+		var txt_name=document.createTextNode(name);
+		var txt_message=document.createTextNode(comment);
+		el_name.appendChild(txt_name);
+		el_message.appendChild(txt_message);
+		el_line.style.border='2px solid #000';
+		parent.appendChild(el_name);
+		parent.appendChild(el_line);
+		parent.appendChild(el_message);
+		parent.setAttribute('class', 'pane');
+		document.getElementById('result').appendChild(parent);
+ 
+		document.getElementById('name').value="";
+		document.getElementById('comment').value="";
+		alert("Comentario agregado exitosamente");
+	}
+}
+	</script>
+	</div>
+	</div>
+</body>
+</html>

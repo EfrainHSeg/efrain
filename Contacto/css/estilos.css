@@ -1,0 +1,20 @@
+h1{
+	text-align: center;
+	color: black;
+}
+body{
+	margin:auto;
+	width: 900px;
+    padding: 50px;
+}
+div{
+	font-family: sans-serif;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+#vic{
+	margin:auto;
+	width: 900px;
+    padding: 10px;
+}

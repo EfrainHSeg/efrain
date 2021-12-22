@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora escolar
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div>
+	<h1>Calculadora Escolar</h1>
+
+	<h2>Ingrese dos números: </h2>
+	<input id="number1"><br><br>
+	<input id="number2"><br><br>
+
+	<button type="button" onclick="myFuction()">Sumar</button>
+	<button type="button1" onclick="myFuction1()">Restar</button>
+	<button type="button2" onclick="myFuction2()">Multiplicar</button>
+	<button type="button3" onclick="myFuction3()">Dividir</button>
+
+	<h3>La suma es:</h3>
+	<h3 id="sumando"></h3>
+	<h3>La resta es:</h3>
+	<h3 id="restando"></h3>
+	<h3>La multiplicación es:</h3>
+	<h3 id="multiplicar"></h3>
+	<h3>La division es: </h3>
+	<h3 id="dividir"></h3>
+	</div>
+
+	<script type="text/javascript">
+		function myFuction(){
+			var x,y,suma,text;
+			x = document.getElementById("number1").value;
+			y = document.getElementById("number2").value;
+			if (isNaN(x) || isNaN(y)) {
+				text = "Es necesario que ingrese dos números válidos";
+			} else {
+				suma = parseFloat(x)+parseFloat(y);
+				text = suma;
+			}
+			document.getElementById("sumando").innerHTML = text
+		}
+
+		function myFuction1(){
+			var x,y,resta,text;
+			x = document.getElementById("number1").value;
+			y = document.getElementById("number2").value;
+			if (isNaN(x) || isNaN(y)) {
+				text = "Es necesario que ingrese dos números válidos";
+			} else {
+				resta = parseFloat(x)-parseFloat(y);
+				text = resta;
+			}
+			document.getElementById("restando").innerHTML = text
+		}
+
+
+		function myFuction2(){
+			var x,y,multiplica,text;
+			x = document.getElementById("number1").value;
+			y = document.getElementById("number2").value;
+			if (isNaN(x) || isNaN(y)) {
+				text = "Es necesario que ingrese dos números válidos";
+			} else {
+				multiplica = parseFloat(x)*parseFloat(y);
+				text = multiplica;
+			}
+			document.getElementById("multiplicar").innerHTML = text
+		}
+
+
+		function myFuction3(){
+			var x,y,divide,text;
+			x = document.getElementById("number1").value;
+			y = document.getElementById("number2").value;
+			if (isNaN(x) || isNaN(y)) {
+				text = "Es necesario que ingrese dos números válidos";
+			} else {
+				divide = parseFloat(x)/parseFloat(y);
+				text = divide;
+			}
+			document.getElementById("dividir").innerHTML = text
+		}
+	</script>
+
+</body>
+</html>

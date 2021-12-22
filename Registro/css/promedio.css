@@ -1,0 +1,15 @@
+h2{
+    color: blue;
+    font-family: sans-serif;
+}
+div{
+    border: 8px solid;
+    background-color: skyblue;
+    width: 400px;
+
+
+}
+#promedio{
+    background-color: yellowgreen;
+    height: 50 px;
+}

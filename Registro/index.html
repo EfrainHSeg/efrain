@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Registros de Notas</title>
+    <link rel="icon" type="image/png" href="img/descarga.png">
+    <link rel="stylesheet" type="text/css" href="css/promedio.css">
+    
+</head>
+<body>
+    <h2 align="center">Registro de notas</h2>
+<form align="center">
+ Primer Número:<br>
+ <input type="text" id="t1" placeholder="primera nota">
+ <br><br>
+ Segundo Número:<br>
+ <input type="text" id="t2" placeholder="segunda nota">
+ <br><br>
+ Tercer Número:<br>
+ <input type="text" id="t3" placeholder="tercera nota">
+ <br><br>
+ Cuarto Número:<br>
+ <input type="text" id="t4" placeholder="cuarta nota">
+ <br><br>
+ <input type="button"  value="Calcular" onclick="Calcular();">
+</form> 
+<p id="promedio" align="center" ></p>
+<script type="text/javascript">
+    function Calcular() { 
+var vr1 = document.getElementById('t1').value; 
+var vr2 = document.getElementById('t2').value; 
+var vr3 = document.getElementById('t3').value; 
+var vr4 = document.getElementById('t4').value;
+var p = (parseFloat(vr1)+parseFloat(vr2)+parseFloat(vr3)+parseFloat(vr4))/4; document.getElementById('promedio').innerHTML = p; 
+}
+</script>
+</body>
+</html>
